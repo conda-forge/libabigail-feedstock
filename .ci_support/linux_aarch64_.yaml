@@ -23,7 +23,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-aarch64
 elfutils:
-- '0.191'
+- '0.192'
 target_platform:
 - linux-aarch64
 zip_keys:
