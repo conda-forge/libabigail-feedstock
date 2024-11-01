@@ -1,5 +1,5 @@
 {% set name = "libabigail" %}
-{% set version = "2.5" %}
+{% set version = "2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: http://mirrors.kernel.org/sourceware/{{ name }}/{{ name }}-{{ version }}.tar.xz
-  sha256: 7cfc4e9b00ae38d87fb0c63beabb32b9cbf9ce410e52ceeb5ad5b3c5beb111f3
+  sha256: 3bfa8ba753ff27722baa7f73b15a475f8a4599355e47439108423d1912bb5469
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not linux]
   run_exports:
     # SO name changes at minor rev bumps.
