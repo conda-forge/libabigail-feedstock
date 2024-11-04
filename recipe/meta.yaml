@@ -24,8 +24,10 @@ requirements:
     - make
   host:
     - elfutils
+    - xxhash
   run:
     - libxml2
+    - xxhash
 
 test:
   commands:
