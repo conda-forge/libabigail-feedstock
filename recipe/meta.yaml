@@ -22,9 +22,13 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
     - make
+    - pkg-config
   host:
     - elfutils
+    - libdwarf-dev
     - xxhash
+    - zlib
+    - liblzma-devel
   run:
     - libxml2
     - xxhash
