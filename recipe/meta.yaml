@@ -1,5 +1,5 @@
 {% set name = "libabigail" %}
-{% set version = "2.6" %}
+{% set version = "2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://mirrors.kernel.org/sourceware/{{ name }}/{{ name }}-{{ version }}.tar.xz
-  sha256: 3bfa8ba753ff27722baa7f73b15a475f8a4599355e47439108423d1912bb5469
+  sha256: 467c5b91b655fe82c54f92b35a7c2155e0dd9f5f052a4e4e21caf245e092c2ca
 
 build:
   number: 0
@@ -22,9 +22,13 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
     - make
+    - pkg-config
   host:
     - elfutils
+    - libdwarf-dev
     - xxhash
+    - zlib
+    - liblzma-devel
   run:
     - libxml2
     - xxhash
