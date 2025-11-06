@@ -28,7 +28,7 @@ requirements:
     - libdwarf-dev
     - zlib
     - liblzma-devel
-    - libxml2-devel ~=2.13.0
+    - libxml2-devel
     - xxhash
     - icu
   run:
