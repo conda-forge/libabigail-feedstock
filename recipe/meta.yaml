@@ -10,7 +10,7 @@ source:
   sha256: 0f52b1ab7997ee2f7895afb427f24126281f66a4756ba2c62bce1a17b546e153
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux]
   run_exports:
     # SO name changes at minor rev bumps.
@@ -28,7 +28,7 @@ requirements:
     - libdwarf-dev
     - zlib
     - liblzma-devel
-    - libxml2 ~=2.13.0
+    - libxml2-devel ~=2.13.0
     - xxhash
     - icu
   run:
