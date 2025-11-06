@@ -10,7 +10,7 @@ source:
   sha256: 0f52b1ab7997ee2f7895afb427f24126281f66a4756ba2c62bce1a17b546e153
 
 build:
-  number: 1
+  number: 2
   skip: true  # [not linux]
   run_exports:
     # SO name changes at minor rev bumps.
@@ -26,12 +26,12 @@ requirements:
   host:
     - elfutils
     - libdwarf-dev
-    - xxhash
     - zlib
     - liblzma-devel
-  run:
-    - libxml2
+    - libxml2 ~=2.13.0
     - xxhash
+    - icu
+  run:
 
 test:
   commands:
