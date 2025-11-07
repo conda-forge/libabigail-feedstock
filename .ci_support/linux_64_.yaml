@@ -22,8 +22,6 @@ icu:
 - '75'
 liblzma_devel:
 - '5'
-libxml2_devel:
-- '2.13'
 target_platform:
 - linux-64
 xxhash:
